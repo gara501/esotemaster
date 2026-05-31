@@ -2,7 +2,12 @@ import axios from 'axios';
 
 import { AskRequest, AskResponse } from '../types';
 
-const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || '/api';
+function normalizeApiBaseUrl(value: string | undefined) {
+  const baseUrl = value?.trim() || '/api';
+  return baseUrl.endsWith('/') ? baseUrl.slice(0, -1) : baseUrl;
+}
+
+const apiBaseUrl = normalizeApiBaseUrl(import.meta.env.VITE_API_BASE_URL);
 
 export const apiClient = axios.create({
   baseURL: apiBaseUrl,
