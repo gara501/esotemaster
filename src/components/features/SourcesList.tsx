@@ -24,7 +24,10 @@ export function SourcesList({ sources = [] }: SourcesListProps) {
       {groupedSources.map((source, index) => (
         <Card key={`${source.book}-${index}`} className="p-4">
           <div className="flex items-start gap-3">
-            <BookMarked className="mt-1 h-5 w-5 flex-none text-mystic-gold-light" aria-hidden="true" />
+            <BookMarked
+              className="mt-1 h-5 w-5 flex-none text-mystic-gold-light"
+              aria-hidden="true"
+            />
             <div>
               <p className="font-semibold text-slate-100">
                 {index + 1}. {source.book}

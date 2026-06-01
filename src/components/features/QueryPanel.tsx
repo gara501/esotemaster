@@ -26,10 +26,14 @@ export function QueryPanel({
   onSubmit,
 }: QueryPanelProps) {
   return (
-    <Card tone="purple" className="relative overflow-hidden p-5 sm:p-6">
-      <div className="absolute inset-x-0 top-0 h-px overflow-hidden bg-mystic-purple/20">
-        <div className="h-full w-1/2 bg-gradient-to-r from-transparent via-mystic-gold-light to-transparent opacity-80 animate-shimmer" />
+    <Card
+      tone="copper"
+      className="relative overflow-hidden bg-black/58 p-5 shadow-2xl shadow-black/50 sm:p-6"
+    >
+      <div className="absolute inset-x-0 top-0 h-px overflow-hidden bg-mystic-gold/20">
+        <div className="h-full w-1/2 animate-shimmer bg-gradient-to-r from-transparent via-mystic-gold-light to-transparent opacity-80" />
       </div>
+      <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full border border-mystic-gold/12 opacity-70" />
 
       <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
         <div>
@@ -37,7 +41,10 @@ export function QueryPanel({
             <WandSparkles className="mr-2 h-4 w-4" aria-hidden="true" />
             Modo activo: {getModeLabel(mode)}
           </Badge>
-          <h2 className="font-heading text-2xl text-white">Consulta la biblioteca</h2>
+          <h2 className="font-heading text-3xl text-mystic-bone">Haz tu pregunta</h2>
+          <p className="mt-2 font-ui text-sm leading-6 text-mystic-parchment/68">
+            Escribe una duda concreta y elige el tipo de lectura que quieres recibir.
+          </p>
         </div>
       </div>
 
@@ -45,10 +52,10 @@ export function QueryPanel({
 
       <div className="mt-6">
         <TextArea
-          label="Haz una pregunta"
+          label="Pregunta para el maestro"
           value={question}
           onChange={(event) => onQuestionChange(event.target.value)}
-          placeholder="Ej: ARTE DE EVOCAR A LOS ESPIRITUS INFERNALES, POR MEDIO DE CIRCULOS CABALISTICOS"
+          placeholder="Ej: Que advierte la tradicion sobre evocar espiritus inferiores mediante circulos cabalisticos?"
           rows={5}
         />
       </div>
@@ -60,7 +67,7 @@ export function QueryPanel({
         className="mt-5 w-full"
         onClick={onSubmit}
       >
-        {isLoading ? 'Consultando biblioteca...' : 'Consultar'}
+        {isLoading ? 'El maestro consulta el grimorio...' : 'Preguntar al maestro'}
       </Button>
     </Card>
   );

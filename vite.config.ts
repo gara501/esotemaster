@@ -9,7 +9,6 @@ export default defineConfig(({ mode }) => {
     plugins: [react()],
     server: {
       port: 5173,
-      allowedHosts: ['1lq7cukdpg.loclx.io'],
       proxy: {
         '/api': {
           target: backendTarget,

@@ -12,9 +12,7 @@ export function ExtractRenderer({ result }: ExtractRendererProps) {
   if (!result.found) {
     return (
       <Card tone="gold" className="p-6">
-        <h2 className="font-heading text-2xl text-white">
-          {result.title || 'Extracto textual'}
-        </h2>
+        <h2 className="font-heading text-2xl text-white">{result.title || 'Extracto textual'}</h2>
         <p className="mt-3 text-slate-300">{result.notes || 'No se encontraron extractos.'}</p>
       </Card>
     );

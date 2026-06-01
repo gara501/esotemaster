@@ -11,11 +11,13 @@ export function TextArea({ label, className, id, ...props }: TextAreaProps) {
 
   return (
     <label className="block" htmlFor={fieldId}>
-      <span className="mb-2 block text-sm font-medium text-slate-200">{label}</span>
+      <span className="mb-2 block font-ui text-xs font-bold uppercase tracking-[0.18em] text-mystic-parchment/85">
+        {label}
+      </span>
       <textarea
         id={fieldId}
         className={cn(
-          'min-h-32 w-full resize-y rounded-lg border border-mystic-border bg-black/30 px-4 py-3 text-sm leading-7 text-slate-100 outline-none transition placeholder:text-slate-500 focus:border-mystic-gold/60 focus:shadow-gold-glow',
+          'min-h-36 w-full resize-y rounded-md border border-mystic-border bg-black/38 px-4 py-3 font-ui text-sm leading-7 text-mystic-bone outline-none transition placeholder:text-mystic-parchment/42 focus:border-mystic-gold/70 focus:shadow-gold-glow',
           className,
         )}
         {...props}

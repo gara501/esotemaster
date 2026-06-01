@@ -4,10 +4,10 @@ import { ExtractModelResult, ModelResult, StandardModelResult } from '../../type
 import { Badge } from '../ui/Badge';
 import { Card } from '../ui/Card';
 import { MysticDivider } from '../ui/MysticDivider';
-import { ConceptGrid } from './ConceptGrid';
 import { ComparisonList } from './ComparisonList';
+import { ConceptGrid } from './ConceptGrid';
 import { ExtractRenderer } from './ExtractRenderer';
-import { SourcesList } from './SourcesList';
+import { MaestroSourcesModal } from './MaestroSourcesModal';
 
 interface ResultRendererProps {
   result: ModelResult | null;
@@ -18,12 +18,11 @@ export function ResultRenderer({ result }: ResultRendererProps) {
     return (
       <Card className="p-6">
         <Badge tone="purple" className="mb-4">
-          ◈ Biblioteca local
+          Ommm
         </Badge>
-        <h2 className="font-heading text-2xl text-white">Esperando consulta</h2>
+        <h2 className="font-heading text-2xl text-white">El maestro está esperando tu consulta</h2>
         <p className="mt-3 leading-7 text-slate-400">
-          Selecciona un modo, escribe una pregunta y consulta el indice Chroma
-          alimentado por tus libros esotericos licenciados.
+          Selecciona un modo, escribe una pregunta y el maestro te responderá.
         </p>
       </Card>
     );
@@ -96,8 +95,7 @@ export function ResultRenderer({ result }: ResultRendererProps) {
       />
 
       <MysticDivider />
-      <SectionTitle title="Fuentes consultadas" />
-      <SourcesList sources={standard.sources_used} />
+      <MaestroSourcesModal sources={standard.sources_used} />
     </section>
   );
 }

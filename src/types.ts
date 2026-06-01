@@ -1,10 +1,4 @@
-export type StudyMode =
-  | 'general'
-  | 'extract'
-  | 'tarot'
-  | 'cabala'
-  | 'alquimia'
-  | 'comparative';
+export type StudyMode = 'general' | 'extract' | 'tarot' | 'cabala' | 'alquimia' | 'comparative';
 
 export interface AskRequest {
   question: string;

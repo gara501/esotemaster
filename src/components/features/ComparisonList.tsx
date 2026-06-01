@@ -18,9 +18,7 @@ export function ComparisonList({ comparisons = [] }: ComparisonListProps) {
         <Card key={`${comparison.topic}-${index}`} className="p-5">
           <div className="mb-4 flex items-center gap-3">
             <Scale className="h-5 w-5 text-mystic-gold-light" aria-hidden="true" />
-            <h4 className="font-heading text-lg text-white">
-              {comparison.topic || 'Sin tema'}
-            </h4>
+            <h4 className="font-heading text-lg text-white">{comparison.topic || 'Sin tema'}</h4>
           </div>
           <dl className="grid gap-4 md:grid-cols-2">
             <Definition label="Tradicion A" value={comparison.tradition_a || '-'} />

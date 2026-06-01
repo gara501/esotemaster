@@ -22,13 +22,13 @@ export function Button({
   return (
     <button
       className={cn(
-        'group inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border px-5 py-3 text-sm font-semibold transition duration-300 focus:outline-none focus:ring-2 focus:ring-mystic-gold/60 disabled:cursor-not-allowed disabled:opacity-60',
+        'group inline-flex min-h-12 items-center justify-center gap-2 rounded-md border px-5 py-3 font-ui text-sm font-bold uppercase tracking-[0.12em] transition duration-300 focus:outline-none focus:ring-2 focus:ring-mystic-gold/60 disabled:cursor-not-allowed disabled:opacity-60',
         variant === 'primary' &&
-          'border-mystic-gold/40 bg-gradient-to-r from-mystic-gold to-mystic-purple text-white shadow-gold-glow hover:-translate-y-0.5 hover:shadow-glow',
+          'border-mystic-gold/50 bg-gradient-to-r from-mystic-copper-dark via-mystic-gold-dark to-mystic-incense-dark text-mystic-bone shadow-gold-glow hover:-translate-y-0.5 hover:border-mystic-gold-light/70 hover:shadow-glow',
         variant === 'secondary' &&
-          'border-mystic-border bg-white/[0.04] text-slate-100 hover:border-mystic-cyan/40 hover:text-white hover:shadow-cyan-glow',
+          'border-mystic-border bg-mystic-void/80 text-mystic-parchment hover:border-mystic-incense/50 hover:text-mystic-bone hover:shadow-incense-glow',
         variant === 'ghost' &&
-          'border-transparent bg-transparent text-slate-300 hover:bg-white/[0.04] hover:text-white',
+          'border-transparent bg-transparent text-mystic-parchment/80 hover:bg-mystic-bone/[0.055] hover:text-mystic-bone',
         className,
       )}
       disabled={disabled || isLoading}
