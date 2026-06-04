@@ -7,7 +7,7 @@ import { MysticDivider } from '../ui/MysticDivider';
 import { ComparisonList } from './ComparisonList';
 import { ConceptGrid } from './ConceptGrid';
 import { ExtractRenderer } from './ExtractRenderer';
-import { MaestroSourcesModal } from './MaestroSourcesModal';
+import { SourcesList } from './SourcesList';
 
 interface ResultRendererProps {
   result: ModelResult | null;
@@ -20,8 +20,8 @@ export function ResultRenderer({ result }: ResultRendererProps) {
         <Badge tone="purple" className="mb-4">
           Ommm
         </Badge>
-        <h2 className="font-heading text-2xl text-white">El maestro está esperando tu consulta</h2>
-        <p className="mt-3 leading-7 text-slate-400">
+        <h2 className="font-heading text-4xl text-white">El maestro está esperando tu consulta</h2>
+        <p className="mt-3 text-lg leading-8 text-slate-300">
           Selecciona un modo, escribe una pregunta y el maestro te responderá.
         </p>
       </Card>
@@ -40,8 +40,8 @@ export function ResultRenderer({ result }: ResultRendererProps) {
         <ScrollText className="mr-2 h-4 w-4" aria-hidden="true" />
         Respuesta
       </Badge>
-      <h2 className="font-heading text-3xl text-white">{standard.title || 'Respuesta'}</h2>
-      <p className="mt-4 whitespace-pre-line text-base leading-8 text-slate-200">
+      <h2 className="font-heading text-4xl text-white">{standard.title || 'Respuesta'}</h2>
+      <p className="mt-5 whitespace-pre-line text-lg leading-9 text-slate-100 sm:text-xl sm:leading-10">
         {standard.short_answer || ''}
       </p>
 
@@ -95,7 +95,8 @@ export function ResultRenderer({ result }: ResultRendererProps) {
       />
 
       <MysticDivider />
-      <MaestroSourcesModal sources={standard.sources_used} />
+      <SectionTitle title="Fuentes consultadas" />
+      <SourcesList sources={standard.sources_used} />
     </section>
   );
 }
@@ -115,15 +116,15 @@ function InfoPanel({
     <Card tone={tone} className="p-5">
       <div className="mb-3 flex items-center gap-3">
         <Icon className="h-6 w-6 text-mystic-gold-light" aria-hidden="true" />
-        <h3 className="font-heading text-xl text-white">{title}</h3>
+        <h3 className="font-heading text-3xl text-white">{title}</h3>
       </div>
-      <p className="whitespace-pre-line text-sm leading-7 text-slate-300">{text}</p>
+      <p className="whitespace-pre-line text-base leading-8 text-slate-200 sm:text-lg">{text}</p>
     </Card>
   );
 }
 
 function SectionTitle({ title }: { title: string }) {
-  return <h3 className="mb-4 font-heading text-2xl text-white">{title}</h3>;
+  return <h3 className="mb-4 font-heading text-3xl text-white">{title}</h3>;
 }
 
 function isExtractResult(result: ModelResult): result is ExtractModelResult {

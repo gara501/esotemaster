@@ -44,7 +44,6 @@ export function LibraryOraclePage() {
         sources={headerSources}
         isOpen={isSourcesOpen}
         onOpenChange={setSourcesOpen}
-        showSummary={false}
       />
       <Sidebar
         isOpen={isSidebarOpen}

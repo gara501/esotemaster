@@ -1,5 +1,3 @@
-import { BookMarked } from 'lucide-react';
-
 import { SourceUsed } from '../../types';
 import { groupSources } from '../../utils/responseParser';
 import { Card } from '../ui/Card';
@@ -13,30 +11,27 @@ export function SourcesList({ sources = [] }: SourcesListProps) {
 
   if (!groupedSources.length) {
     return (
-      <Card className="p-4">
-        <p className="text-sm text-slate-400">No se encontraron fuentes especificas.</p>
+      <Card className="p-5">
+        <p className="font-ui text-base text-mystic-parchment/68">
+          No se encontraron fuentes especificas.
+        </p>
       </Card>
     );
   }
 
   return (
-    <div className="grid gap-3 md:grid-cols-2">
-      {groupedSources.map((source, index) => (
-        <Card key={`${source.book}-${index}`} className="p-4">
-          <div className="flex items-start gap-3">
-            <BookMarked
-              className="mt-1 h-5 w-5 flex-none text-mystic-gold-light"
-              aria-hidden="true"
-            />
-            <div>
-              <p className="font-semibold text-slate-100">
-                {index + 1}. {source.book}
-              </p>
-              <p className="mt-1 text-sm text-slate-400">Paginas: {source.pages.join(', ')}</p>
-            </div>
-          </div>
-        </Card>
-      ))}
-    </div>
+    <Card className="p-5">
+      <ul className="space-y-2 font-ui text-base leading-7 text-mystic-parchment/82 sm:text-lg">
+        {groupedSources.map((source, index) => (
+          <li key={`${source.book}-${index}`} className="flex gap-2">
+            <span className="text-mystic-gold-light">{index + 1}.</span>
+            <span>
+              <span className="font-bold text-mystic-bone">{source.book}</span>, pag:{' '}
+              {source.pages.join(', ')}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </Card>
   );
 }

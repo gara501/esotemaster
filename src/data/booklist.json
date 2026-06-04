@@ -1,160 +1,436 @@
 {
-  "books": [
-    {
-      "title": "Alquimia: Marie Louise von Franz",
-      "filename": "Alquimia_Marie_Louise_von_Franz.pdf",
-      "path": "books/Alquimia_Marie_Louise_von_Franz.pdf",
-      "sizeBytes": 10498604
-    },
-    {
-      "title": "Anatomia Oculta",
-      "filename": "AnatomiaOculta.pdf",
-      "path": "books/AnatomiaOculta.pdf",
-      "sizeBytes": 633355
-    },
-    {
-      "title": "Cabala de Prediccion",
-      "filename": "Cabala de Prediccion.pdf",
-      "path": "books/Cabala de Prediccion.pdf",
-      "sizeBytes": 9999518
-    },
-    {
-      "title": "Corpus Hermeticum",
-      "filename": "Corpus Hermeticum.pdf",
-      "path": "books/Corpus Hermeticum.pdf",
-      "sizeBytes": 550824
-    },
-    {
-      "title": "Diccionario Demonológico",
-      "filename": "Diccionario Demonológico.pdf",
-      "path": "books/Diccionario Demonológico.pdf",
-      "sizeBytes": 177083
-    },
-    {
-      "title": "El cuerpo astral",
-      "filename": "El cuerpo astral.pdf",
-      "path": "books/El cuerpo astral.pdf",
-      "sizeBytes": 1000555
-    },
-    {
-      "title": "El Gran Grimorio del Papa Honorio",
-      "filename": "El Gran Grimorio, Papa Honorio.pdf",
-      "path": "books/El Gran Grimorio, Papa Honorio.pdf",
-      "sizeBytes": 1570533
-    },
-    {
-      "title": "El Hombre y sus simbolos",
-      "filename": "El Hombre y sus simbolos.pdf",
-      "path": "books/El Hombre y sus simbolos.pdf",
-      "sizeBytes": 21952740
-    },
-    {
-      "title": "EL Ojo magico de horus",
-      "filename": "EL Ojo magico de horus.pdf",
-      "path": "books/EL Ojo magico de horus.pdf",
-      "sizeBytes": 2189111
-    },
-    {
-      "title": "El rito de York",
-      "filename": "El rito de York.pdf",
-      "path": "books/El rito de York.pdf",
-      "sizeBytes": 710827
-    },
-    {
-      "title": "El cuarto camino",
-      "filename": "ElCuartoCamino.pdf",
-      "path": "books/ElCuartoCamino.pdf",
-      "sizeBytes": 121051
-    },
-    {
-      "title": "Fisica Cuantica Para Filosofos",
-      "filename": "Fisica-Cuantica-Para-Filosofos.pdf",
-      "path": "books/Fisica-Cuantica-Para-Filosofos.pdf",
-      "sizeBytes": 1824699
-    },
-    {
-      "title": "La Alquimia",
-      "filename": "LaAlquimia.pdf",
-      "path": "books/LaAlquimia.pdf",
-      "sizeBytes": 729369
-    },
-    {
-      "title": "Los Nazis y La Gnosis",
-      "filename": "Los-Nazis-y-La-Gnosis.pdf",
-      "path": "books/Los-Nazis-y-La-Gnosis.pdf",
-      "sizeBytes": 2431911
-    },
-    {
-      "title": "Magic Without Tears",
-      "filename": "MagicWithoutTears.pdf",
-      "path": "books/MagicWithoutTears.pdf",
-      "sizeBytes": 660051
-    },
-    {
-      "title": "Malleus Maleficarum El Martillo de las Brujas",
-      "filename": "Malleus Maleficarum_ El Martillo de las Brujas.pdf",
-      "path": "books/Malleus Maleficarum_ El Martillo de las Brujas.pdf",
-      "sizeBytes": 2067762
-    },
-    {
-      "title": "Manual del aprendiz Mason rito de York",
-      "filename": "Manual del aprendiz Mason rito de York.pdf",
-      "path": "books/Manual del aprendiz Mason rito de York.pdf",
-      "sizeBytes": 832402
-    },
-    {
-      "title": "Muchembled Robert: Historia del diablo",
-      "filename": "Muchembled Robert - Historia del diablo Siglos XII-XX ocr 2002 (2).pdf",
-      "path": "books/Muchembled Robert - Historia del diablo Siglos XII-XX ocr 2002 (2).pdf",
-      "sizeBytes": 17841881
-    },
-    {
-      "title": "Psicologia hermetica",
-      "filename": "psicologia-hermetica.pdf",
-      "path": "books/psicologia-hermetica.pdf",
-      "sizeBytes": 191732
-    },
-    {
-      "title": "Siete sistemas de magia",
-      "filename": "SieteSistemasDeMagia.pdf",
-      "path": "books/SieteSistemasDeMagia.pdf",
-      "sizeBytes": 388507
-    },
-    {
-      "title": "Simbolismo Hermetico",
-      "filename": "simbolismo-hermetico.pdf",
-      "path": "books/simbolismo-hermetico.pdf",
-      "sizeBytes": 1243865
-    },
-    {
-      "title": "Simbolos: Titus Burckhardt",
-      "filename": "Simbolos-Titus-Burckhardt.pdf",
-      "path": "books/Simbolos-Titus-Burckhardt.pdf",
-      "sizeBytes": 7920721
-    },
-    {
-      "title": "Simon Pieters:  Diabolus Las Mil Caras Del Diablo a Lo Largo de La Historia",
-      "filename": "Simon-Pieters-Diabolus-Las-Mil-Caras-Del-Diablo-a-Lo-Largo-de-La-Historia.pdf",
-      "path": "books/Simon-Pieters-Diabolus-Las-Mil-Caras-Del-Diablo-a-Lo-Largo-de-La-Historia.pdf",
-      "sizeBytes": 1065141
-    },
-    {
-      "title": "El Tarot de Thelema",
-      "filename": "Tarot Thelema.pdf",
-      "path": "books/Tarot Thelema.pdf",
-      "sizeBytes": 4942986
-    },
-    {
-      "title": "Tres Iniciados El Kybalion",
-      "filename": "Tres-Iniciados-El-Kybalion.pdf",
-      "path": "books/Tres-Iniciados-El-Kybalion.pdf",
-      "sizeBytes": 440584
-    },
-    {
-      "title": "Wirth Oswald La Serpiente Del Genesis El Problema Del Mal",
-      "filename": "Wirth-Oswald-La-Serpiente-Del-Genesis-El-Problema-Del-Mal.pdf",
-      "path": "books/Wirth-Oswald-La-Serpiente-Del-Genesis-El-Problema-Del-Mal.pdf",
-      "sizeBytes": 1134808
-    }
-  ]
+    "books":  [
+                  {
+                      "title":  "Adiccion a las sectas",
+                      "filename":  "Adiccion a las sectas.pdf",
+                      "path":  "books/Adiccion a las sectas.pdf",
+                      "sizeBytes":  67806753
+                  },
+                  {
+                      "title":  "Alquimia Marie Louisev Von Franz",
+                      "filename":  "Alquimia Marie Louisev Von Franz.pdf",
+                      "path":  "books/Alquimia Marie Louisev Von Franz.pdf",
+                      "sizeBytes":  10498604
+                  },
+                  {
+                      "title":  "Anatomia Oculta",
+                      "filename":  "Anatomia Oculta.pdf",
+                      "path":  "books/Anatomia Oculta.pdf",
+                      "sizeBytes":  633355
+                  },
+                  {
+                      "title":  "Botanica Oculta",
+                      "filename":  "Botanica Oculta.pdf",
+                      "path":  "books/Botanica Oculta.pdf",
+                      "sizeBytes":  340630
+                  },
+                  {
+                      "title":  "Cabala de Prediccion",
+                      "filename":  "Cabala de Prediccion.pdf",
+                      "path":  "books/Cabala de Prediccion.pdf",
+                      "sizeBytes":  9999518
+                  },
+                  {
+                      "title":  "Chamanes y chamanismo",
+                      "filename":  "Chamanes y chamanismo.pdf",
+                      "path":  "books/Chamanes y chamanismo.pdf",
+                      "sizeBytes":  90286
+                  },
+                  {
+                      "title":  "Como es arriba es abajo",
+                      "filename":  "Como es arriba es abajo.pdf",
+                      "path":  "books/Como es arriba es abajo.pdf",
+                      "sizeBytes":  1791046
+                  },
+                  {
+                      "title":  "Corpus Hermeticum",
+                      "filename":  "Corpus Hermeticum.pdf",
+                      "path":  "books/Corpus Hermeticum.pdf",
+                      "sizeBytes":  550824
+                  },
+                  {
+                      "title":  "Curso de alta magia blanca",
+                      "filename":  "Curso de alta magia blanca.pdf",
+                      "path":  "books/Curso de alta magia blanca.pdf",
+                      "sizeBytes":  2047336
+                  },
+                  {
+                      "title":  "Curso de teosofia",
+                      "filename":  "Curso de teosofia.pdf",
+                      "path":  "books/Curso de teosofia.pdf",
+                      "sizeBytes":  466570
+                  },
+                  {
+                      "title":  "Daemonum",
+                      "filename":  "Daemonum.pdf",
+                      "path":  "books/Daemonum.pdf",
+                      "sizeBytes":  79617
+                  },
+                  {
+                      "title":  "Diccionario Demonologico",
+                      "filename":  "Diccionario Demonologico.pdf",
+                      "path":  "books/Diccionario Demonologico.pdf",
+                      "sizeBytes":  153356
+                  },
+                  {
+                      "title":  "Diccionario Demonológico",
+                      "filename":  "Diccionario Demonológico.pdf",
+                      "path":  "books/Diccionario Demonológico.pdf",
+                      "sizeBytes":  177083
+                  },
+                  {
+                      "title":  "Dogma y rigual de la alta magia",
+                      "filename":  "Dogma y rigual de la alta magia.pdf",
+                      "path":  "books/Dogma y rigual de la alta magia.pdf",
+                      "sizeBytes":  668181
+                  },
+                  {
+                      "title":  "El amor magico",
+                      "filename":  "El amor magico.pdf",
+                      "path":  "books/El amor magico.pdf",
+                      "sizeBytes":  302837
+                  },
+                  {
+                      "title":  "El Cuarto Camino",
+                      "filename":  "El Cuarto Camino.pdf",
+                      "path":  "books/El Cuarto Camino.pdf",
+                      "sizeBytes":  121051
+                  },
+                  {
+                      "title":  "El cuerpo astral",
+                      "filename":  "El cuerpo astral.pdf",
+                      "path":  "books/El cuerpo astral.pdf",
+                      "sizeBytes":  1000555
+                  },
+                  {
+                      "title":  "El Gran Grimorio, Papa Honorio",
+                      "filename":  "El Gran Grimorio, Papa Honorio.pdf",
+                      "path":  "books/El Gran Grimorio, Papa Honorio.pdf",
+                      "sizeBytes":  1570533
+                  },
+                  {
+                      "title":  "El gran libro de los chakras",
+                      "filename":  "El gran libro de los chakras.pdf",
+                      "path":  "books/El gran libro de los chakras.pdf",
+                      "sizeBytes":  887289
+                  },
+                  {
+                      "title":  "El hombre perverso del mundo",
+                      "filename":  "El hombre perverso del mundo.pdf",
+                      "path":  "books/El hombre perverso del mundo.pdf",
+                      "sizeBytes":  2250898
+                  },
+                  {
+                      "title":  "El Hombre y sus simbolos",
+                      "filename":  "El Hombre y sus simbolos.pdf",
+                      "path":  "books/El Hombre y sus simbolos.pdf",
+                      "sizeBytes":  21952740
+                  },
+                  {
+                      "title":  "El Kybalion",
+                      "filename":  "El Kybalion.pdf",
+                      "path":  "books/El Kybalion.pdf",
+                      "sizeBytes":  444333
+                  },
+                  {
+                      "title":  "El libro de Enoc",
+                      "filename":  "El libro de Enoc.pdf",
+                      "path":  "books/El libro de Enoc.pdf",
+                      "sizeBytes":  277030
+                  },
+                  {
+                      "title":  "EL mago y la magia",
+                      "filename":  "EL mago y la magia.pdf",
+                      "path":  "books/EL mago y la magia.pdf",
+                      "sizeBytes":  231553
+                  },
+                  {
+                      "title":  "EL Ojo magico de horus",
+                      "filename":  "EL Ojo magico de horus.pdf",
+                      "path":  "books/EL Ojo magico de horus.pdf",
+                      "sizeBytes":  2189111
+                  },
+                  {
+                      "title":  "El rito de York",
+                      "filename":  "El rito de York.pdf",
+                      "path":  "books/El rito de York.pdf",
+                      "sizeBytes":  710827
+                  },
+                  {
+                      "title":  "El significado de los numeros",
+                      "filename":  "El significado de los numeros.pdf",
+                      "path":  "books/El significado de los numeros.pdf",
+                      "sizeBytes":  53703
+                  },
+                  {
+                      "title":  "El simbolismo del tarot",
+                      "filename":  "El simbolismo del tarot.pdf",
+                      "path":  "books/El simbolismo del tarot.pdf",
+                      "sizeBytes":  228069
+                  },
+                  {
+                      "title":  "El simbolismo hermetico",
+                      "filename":  "El simbolismo hermetico.pdf",
+                      "path":  "books/El simbolismo hermetico.pdf",
+                      "sizeBytes":  1024299
+                  },
+                  {
+                      "title":  "Encuentro con la sombra",
+                      "filename":  "Encuentro con la sombra.pdf",
+                      "path":  "books/Encuentro con la sombra.pdf",
+                      "sizeBytes":  793731
+                  },
+                  {
+                      "title":  "Evangelio de Maria Magdalena",
+                      "filename":  "Evangelio de Maria Magdalena.pdf",
+                      "path":  "books/Evangelio de Maria Magdalena.pdf",
+                      "sizeBytes":  106748
+                  },
+                  {
+                      "title":  "Fisica Cuantica Para Filosofos",
+                      "filename":  "Fisica-Cuantica-Para-Filosofos.pdf",
+                      "path":  "books/Fisica-Cuantica-Para-Filosofos.pdf",
+                      "sizeBytes":  1824699
+                  },
+                  {
+                      "title":  "Flat Lux",
+                      "filename":  "Flat Lux.pdf",
+                      "path":  "books/Flat Lux.pdf",
+                      "sizeBytes":  2262186
+                  },
+                  {
+                      "title":  "Fundamentos de la filosofia esoterica",
+                      "filename":  "Fundamentos de la filosofia esoterica.pdf",
+                      "path":  "books/Fundamentos de la filosofia esoterica.pdf",
+                      "sizeBytes":  1844929
+                  },
+                  {
+                      "title":  "Historia del diablo",
+                      "filename":  "Historia del diablo.pdf",
+                      "path":  "books/Historia del diablo.pdf",
+                      "sizeBytes":  17841881
+                  },
+                  {
+                      "title":  "Iniciaciones en las sociedades secretas",
+                      "filename":  "Iniciaciones en las sociedades secretas.pdf",
+                      "path":  "books/Iniciaciones en las sociedades secretas.pdf",
+                      "sizeBytes":  1327005
+                  },
+                  {
+                      "title":  "Isis sin velo",
+                      "filename":  "Isis sin velo.pdf",
+                      "path":  "books/Isis sin velo.pdf",
+                      "sizeBytes":  1729929
+                  },
+                  {
+                      "title":  "La casa de las imagenes",
+                      "filename":  "La casa de las imagenes.pdf",
+                      "path":  "books/La casa de las imagenes.pdf",
+                      "sizeBytes":  703590
+                  },
+                  {
+                      "title":  "La doctrina de los demonios",
+                      "filename":  "La doctrina de los demonios.pdf",
+                      "path":  "books/La doctrina de los demonios.pdf",
+                      "sizeBytes":  442694
+                  },
+                  {
+                      "title":  "La doctrina del corazon",
+                      "filename":  "La doctrina del corazon.pdf",
+                      "path":  "books/La doctrina del corazon.pdf",
+                      "sizeBytes":  149628
+                  },
+                  {
+                      "title":  "La doctrina secreta",
+                      "filename":  "La doctrina secreta.pdf",
+                      "path":  "books/La doctrina secreta.pdf",
+                      "sizeBytes":  1885431
+                  },
+                  {
+                      "title":  "La iniciacion",
+                      "filename":  "La iniciacion.pdf",
+                      "path":  "books/La iniciacion.pdf",
+                      "sizeBytes":  7721802
+                  },
+                  {
+                      "title":  "La mediumnidad",
+                      "filename":  "La mediumnidad.pdf",
+                      "path":  "books/La mediumnidad.pdf",
+                      "sizeBytes":  605893
+                  },
+                  {
+                      "title":  "La religion prohibida Gnosis",
+                      "filename":  "La religion prohibida Gnosis.pdf",
+                      "path":  "books/La religion prohibida Gnosis.pdf",
+                      "sizeBytes":  481968
+                  },
+                  {
+                      "title":  "La serpiente del genesis",
+                      "filename":  "La serpiente del genesis.pdf",
+                      "path":  "books/La serpiente del genesis.pdf",
+                      "sizeBytes":  1134808
+                  },
+                  {
+                      "title":  "LaAlquimia",
+                      "filename":  "LaAlquimia.pdf",
+                      "path":  "books/LaAlquimia.pdf",
+                      "sizeBytes":  729369
+                  },
+                  {
+                      "title":  "Las enseñanzas secretas",
+                      "filename":  "Las enseñanzas secretas.pdf",
+                      "path":  "books/Las enseñanzas secretas.pdf",
+                      "sizeBytes":  26605824
+                  },
+                  {
+                      "title":  "Las mil caras del diablo en la historia",
+                      "filename":  "Las mil caras del diablo en la historia.pdf",
+                      "path":  "books/Las mil caras del diablo en la historia.pdf",
+                      "sizeBytes":  1065141
+                  },
+                  {
+                      "title":  "Liber Aleph",
+                      "filename":  "Liber Aleph.pdf",
+                      "path":  "books/Liber Aleph.pdf",
+                      "sizeBytes":  965930
+                  },
+                  {
+                      "title":  "Los elementales",
+                      "filename":  "Los elementales.pdf",
+                      "path":  "books/Los elementales.pdf",
+                      "sizeBytes":  271154
+                  },
+                  {
+                      "title":  "Los Nazis y La Gnosis",
+                      "filename":  "Los Nazis y La Gnosis.pdf",
+                      "path":  "books/Los Nazis y La Gnosis.pdf",
+                      "sizeBytes":  2431911
+                  },
+                  {
+                      "title":  "Magia Sexual orgasmos energeticos",
+                      "filename":  "Magia Sexual orgasmos energeticos.pdf",
+                      "path":  "books/Magia Sexual orgasmos energeticos.pdf",
+                      "sizeBytes":  273021
+                  },
+                  {
+                      "title":  "Magia sexual rituales",
+                      "filename":  "Magia sexual rituales.pdf",
+                      "path":  "books/Magia sexual rituales.pdf",
+                      "sizeBytes":  998751
+                  },
+                  {
+                      "title":  "MagicWithoutTears",
+                      "filename":  "MagicWithoutTears.pdf",
+                      "path":  "books/MagicWithoutTears.pdf",
+                      "sizeBytes":  660051
+                  },
+                  {
+                      "title":  "Malleus Maleficarum El Martillo de las Brujas",
+                      "filename":  "Malleus Maleficarum_ El Martillo de las Brujas.pdf",
+                      "path":  "books/Malleus Maleficarum_ El Martillo de las Brujas.pdf",
+                      "sizeBytes":  2067762
+                  },
+                  {
+                      "title":  "Manual del aprendiz Mason rito de York",
+                      "filename":  "Manual del aprendiz Mason rito de York.pdf",
+                      "path":  "books/Manual del aprendiz Mason rito de York.pdf",
+                      "sizeBytes":  832402
+                  },
+                  {
+                      "title":  "Mediumnidad dinamica",
+                      "filename":  "Mediumnidad dinamica.pdf",
+                      "path":  "books/Mediumnidad dinamica.pdf",
+                      "sizeBytes":  593219
+                  },
+                  {
+                      "title":  "Numerologia sagrada",
+                      "filename":  "Numerologia sagrada.pdf",
+                      "path":  "books/Numerologia sagrada.pdf",
+                      "sizeBytes":  94398
+                  },
+                  {
+                      "title":  "Perdurabo",
+                      "filename":  "Perdurabo.pdf",
+                      "path":  "books/Perdurabo.pdf",
+                      "sizeBytes":  2053115
+                  },
+                  {
+                      "title":  "Psicologia Hermetica",
+                      "filename":  "Psicologia Hermetica.pdf",
+                      "path":  "books/Psicologia Hermetica.pdf",
+                      "sizeBytes":  191732
+                  },
+                  {
+                      "title":  "Registros Aksashikos",
+                      "filename":  "Registros Aksashikos.pdf",
+                      "path":  "books/Registros Aksashikos.pdf",
+                      "sizeBytes":  2942607
+                  },
+                  {
+                      "title":  "Revision del Aura",
+                      "filename":  "Revision del Aura.pdf",
+                      "path":  "books/Revision del Aura.pdf",
+                      "sizeBytes":  164594
+                  },
+                  {
+                      "title":  "Ritual del pentagrama SOROR",
+                      "filename":  "Ritual del pentagrama SOROR.pdf",
+                      "path":  "books/Ritual del pentagrama SOROR.pdf",
+                      "sizeBytes":  66278
+                  },
+                  {
+                      "title":  "Ritual romano de exorcismos",
+                      "filename":  "Ritual romano de exorcismos.pdf",
+                      "path":  "books/Ritual romano de exorcismos.pdf",
+                      "sizeBytes":  152316
+                  },
+                  {
+                      "title":  "Sectas luciferinas actuales",
+                      "filename":  "Sectas luciferinas actuales.pdf",
+                      "path":  "books/Sectas luciferinas actuales.pdf",
+                      "sizeBytes":  653547
+                  },
+                  {
+                      "title":  "Siete Sistemas De Magia",
+                      "filename":  "Siete Sistemas De Magia.pdf",
+                      "path":  "books/Siete Sistemas De Magia.pdf",
+                      "sizeBytes":  388507
+                  },
+                  {
+                      "title":  "Simbolismo Hermetico",
+                      "filename":  "Simbolismo Hermetico.pdf",
+                      "path":  "books/Simbolismo Hermetico.pdf",
+                      "sizeBytes":  1243865
+                  },
+                  {
+                      "title":  "Simbolos Titus Burckhardt",
+                      "filename":  "Simbolos Titus Burckhardt.pdf",
+                      "path":  "books/Simbolos Titus Burckhardt.pdf",
+                      "sizeBytes":  7920721
+                  },
+                  {
+                      "title":  "Tarot Thelema",
+                      "filename":  "Tarot Thelema.pdf",
+                      "path":  "books/Tarot Thelema.pdf",
+                      "sizeBytes":  4942986
+                  },
+                  {
+                      "title":  "Tratado de ciencia oculta papus",
+                      "filename":  "Tratado de ciencia oculta papus.pdf",
+                      "path":  "books/Tratado de ciencia oculta papus.pdf",
+                      "sizeBytes":  2066677
+                  },
+                  {
+                      "title":  "Tratado sobre magia blanca",
+                      "filename":  "Tratado sobre magia blanca.pdf",
+                      "path":  "books/Tratado sobre magia blanca.pdf",
+                      "sizeBytes":  1790710
+                  },
+                  {
+                      "title":  "Tratado sobre ocultismo natural",
+                      "filename":  "Tratado sobre ocultismo natural.pdf",
+                      "path":  "books/Tratado sobre ocultismo natural.pdf",
+                      "sizeBytes":  417021
+                  }
+              ]
 }
