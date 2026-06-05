@@ -39,16 +39,17 @@ export function LibraryOraclePage() {
 
   const headerSources = result && result.mode !== 'extract' ? result.sources_used : undefined;
   const shouldShowResponse = Boolean(result || error);
+  const isConsulting = isLoading && !shouldShowResponse;
 
   useEffect(() => {
-    if (isLoading || !shouldShowResponse) {
+    if (isConsulting || !shouldShowResponse) {
       return;
     }
 
     window.requestAnimationFrame(() => {
       responseRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
-  }, [error, isLoading, result, shouldShowResponse]);
+  }, [error, isConsulting, result, shouldShowResponse]);
 
   return (
     <PageWrapper>
@@ -58,7 +59,7 @@ export function LibraryOraclePage() {
         isOpen={isSourcesOpen}
         onOpenChange={setSourcesOpen}
       />
-      <ConsultingLoadingModal isOpen={isLoading} />
+      <ConsultingLoadingModal isOpen={isConsulting} />
       <Sidebar
         isOpen={isSidebarOpen}
         mode={mode}
