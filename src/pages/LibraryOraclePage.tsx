@@ -59,7 +59,7 @@ export function LibraryOraclePage() {
         isOpen={isSourcesOpen}
         onOpenChange={setSourcesOpen}
       />
-      <ConsultingLoadingModal isOpen={isConsulting} />
+      {isConsulting ? <ConsultingLoadingModal /> : null}
       <Sidebar
         isOpen={isSidebarOpen}
         mode={mode}
