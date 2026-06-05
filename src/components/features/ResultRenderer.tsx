@@ -1,3 +1,4 @@
+import ReactMarkdown from 'react-markdown';
 import { History, Lightbulb, MessageSquareText, ScrollText } from 'lucide-react';
 
 import { ExtractModelResult, ModelResult, StandardModelResult } from '../../types';
@@ -20,9 +21,9 @@ export function ResultRenderer({ result }: ResultRendererProps) {
         <Badge tone="purple" className="mb-4">
           Ommm
         </Badge>
-        <h2 className="font-heading text-4xl text-white">El maestro está esperando tu consulta</h2>
+        <h2 className="font-heading text-4xl text-white">El maestro esta esperando tu consulta</h2>
         <p className="mt-3 text-lg leading-8 text-slate-300">
-          Selecciona un modo, escribe una pregunta y el maestro te responderá.
+          Selecciona un modo, escribe una pregunta y el maestro te respondera.
         </p>
       </Card>
     );
@@ -67,9 +68,10 @@ export function ResultRenderer({ result }: ResultRendererProps) {
           <MysticDivider />
           <InfoPanel
             icon={MessageSquareText}
-            title="Analisis ampliado"
+            title="Analisis detallado"
             text={standard.expanded_analysis}
             tone="purple"
+            renderMarkdown
           />
         </>
       ) : null}
@@ -106,11 +108,13 @@ function InfoPanel({
   title,
   text,
   tone,
+  renderMarkdown = false,
 }: {
   icon: typeof History;
   title: string;
   text: string;
   tone: 'default' | 'gold' | 'cyan' | 'purple';
+  renderMarkdown?: boolean;
 }) {
   return (
     <Card tone={tone} className="p-5">
@@ -118,7 +122,13 @@ function InfoPanel({
         <Icon className="h-6 w-6 text-mystic-gold-light" aria-hidden="true" />
         <h3 className="font-heading text-3xl text-white">{title}</h3>
       </div>
-      <p className="whitespace-pre-line text-base leading-8 text-slate-200 sm:text-lg">{text}</p>
+      {renderMarkdown ? (
+        <div className="space-y-4 text-lg leading-9 text-slate-100 sm:text-xl sm:leading-10 [&_a]:text-mystic-cyan [&_a]:underline [&_blockquote]:border-l-2 [&_blockquote]:border-mystic-gold/45 [&_blockquote]:pl-4 [&_blockquote]:text-mystic-parchment [&_code]:rounded [&_code]:bg-black/40 [&_code]:px-1.5 [&_code]:py-0.5 [&_code]:text-mystic-gold-light [&_h1]:font-heading [&_h1]:text-3xl [&_h2]:font-heading [&_h2]:text-2xl [&_h3]:font-heading [&_h3]:text-xl [&_li]:ml-6 [&_ol]:list-decimal [&_strong]:text-mystic-bone [&_ul]:list-disc">
+          <ReactMarkdown>{text}</ReactMarkdown>
+        </div>
+      ) : (
+        <p className="whitespace-pre-line text-base leading-8 text-slate-200 sm:text-lg">{text}</p>
+      )}
     </Card>
   );
 }
