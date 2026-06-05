@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
   AlertTriangle,
   CheckCircle2,
@@ -8,6 +8,7 @@ import {
   MessageCircle,
 } from 'lucide-react';
 
+import { ConsultingLoadingModal } from '../components/features/ConsultingLoadingModal';
 import { MaestroSourcesModal } from '../components/features/MaestroSourcesModal';
 import { QueryPanel } from '../components/features/QueryPanel';
 import { ResultRenderer } from '../components/features/ResultRenderer';
@@ -22,6 +23,7 @@ import { useEsotericStore } from '../store/useEsotericStore';
 export function LibraryOraclePage() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   const [isSourcesOpen, setSourcesOpen] = useState(false);
+  const responseRef = useRef<HTMLElement | null>(null);
   const { status, appName } = useApiHealth();
   const {
     mode,
@@ -36,6 +38,17 @@ export function LibraryOraclePage() {
   } = useEsotericStore();
 
   const headerSources = result && result.mode !== 'extract' ? result.sources_used : undefined;
+  const shouldShowResponse = Boolean(result || error);
+
+  useEffect(() => {
+    if (isLoading || !shouldShowResponse) {
+      return;
+    }
+
+    window.requestAnimationFrame(() => {
+      responseRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }, [error, isLoading, result, shouldShowResponse]);
 
   return (
     <PageWrapper>
@@ -45,6 +58,7 @@ export function LibraryOraclePage() {
         isOpen={isSourcesOpen}
         onOpenChange={setSourcesOpen}
       />
+      <ConsultingLoadingModal isOpen={isLoading} />
       <Sidebar
         isOpen={isSidebarOpen}
         mode={mode}
@@ -71,12 +85,14 @@ export function LibraryOraclePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 pb-10 sm:px-6 lg:px-8">
-        <Card tone="incense" className="min-h-[24rem] p-5 sm:p-6">
-          {error ? <ErrorPanel message={error} rawResult={rawResult} /> : null}
-          {!error ? <ResultRenderer result={result} /> : null}
-        </Card>
-      </section>
+      {shouldShowResponse ? (
+        <section ref={responseRef} className="mx-auto scroll-mt-28 max-w-7xl px-4 pb-10 sm:px-6 lg:px-8">
+          <Card tone="incense" className="min-h-[24rem] p-5 sm:p-6">
+            {error ? <ErrorPanel message={error} rawResult={rawResult} /> : null}
+            {!error && result ? <ResultRenderer result={result} /> : null}
+          </Card>
+        </section>
+      ) : null}
     </PageWrapper>
   );
 }
@@ -127,7 +143,6 @@ function Hero({
 }
 
 function ErrorPanel({ message, rawResult }: { message: string; rawResult: unknown }) {
-
   return (
     <div>
       <Badge tone="gold" className="mb-4">
