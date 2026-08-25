@@ -1,7 +1,6 @@
 # Maestro Esoterico React
 
-React 18 + Vite + TypeScript rebuild of the original Streamlit client at
-`M:\PythonProjects\esot`.
+React 18 + Vite + TypeScript rebuild of the original Streamlit client
 
 ## Original Project Analysis
 
